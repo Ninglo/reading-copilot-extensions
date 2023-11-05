@@ -1,0 +1,22 @@
+{
+  "name": "reading-copilot-extensions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:content": "esbuild firefox/content-script.ts --bundle --outfile=firefox/content-script.js",
+    "build:popup": "esbuild firefox/popup/popup.ts --bundle --outfile=firefox/popup/popup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^111.0.3",
+    "esbuild": "^0.19.5",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "openai": "^4.15.3"
+  }
+}
